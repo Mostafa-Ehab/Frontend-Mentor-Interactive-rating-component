@@ -1,0 +1,106 @@
+/* Start Global Setting */
+body {
+    background-color: #131519;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    background-color: #212732;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border-radius: 25px;
+    width: 350px;
+}
+
+.container p {
+    color: #646C76;
+    font-size: 15px;
+}
+
+.container h1 {
+    color: #fff;
+}
+
+/* End Global Setting */
+
+/* Start Rating State */
+.rating .star img {
+    background-color: #262E38;
+    border-radius: 25px;
+    padding: 16.5px;
+}
+
+.rating .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    padding: 10px 0 25px;
+}
+
+.rating .grid button {
+    background-color: #262E38;
+    outline: none;
+    border: none;
+    color: #646C76;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.rating .grid button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.rating .grid button:focus {
+    background-color: #7D8898;
+    color: #fff;
+}
+
+.rating .submit {
+    outline: none;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    border-radius: 25px;
+    height: 50px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.rating .submit:not([disabled]):hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+/* End Rating State */
+
+/* Start Thanks State */
+.thanks {
+    display: none;
+    text-align: center;
+    width: 340px;
+}
+
+.thanks>p:first-of-type {
+    background-color: #262E38;
+    color: hsl(25, 97%, 53%);
+    padding: 5px 15px;
+    margin: 15px auto;
+    width: fit-content;
+    border-radius: 25px;
+}
+
+/* End Thanks State */
+@media (max-width: 576px) {
+
+    .container {
+        width: 300px;
+    }
+}
